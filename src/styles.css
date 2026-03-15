@@ -75,3 +75,15 @@ p {
   padding: 20px;
   box-shadow: 4px 4px 6px rgb(128, 128, 128, 50%);
 }
+
+.profile-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
