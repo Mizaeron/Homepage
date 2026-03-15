@@ -1,6 +1,5 @@
 html,
 body {
-  height: 100%;
   margin: 0;
 }
 
@@ -11,7 +10,6 @@ body {
 .layout {
   display: grid;
   grid-template-rows: 3fr 5fr 3fr;
-  height: 100vh;
 }
 
 header,
@@ -42,19 +40,38 @@ footer {
   right: 0;
   bottom: 0;
   background-color: rgb(7, 121, 150);
-  transform: skewY(-4deg);
+  transform: skewY(-10deg);
   transform-origin: left top;
 }
 
-.content {
+.header-content {
+  height: 60vh;
+  display: flex;
   max-width: 1200px;
   z-index: 1;
-  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+.profile {
+  min-width: 40%;
+}
 .profile-pic {
-  height: 200px;
-  width: 30%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
+}
+
+.profile-description {
+  background-color: white;
+  margin: auto;
+  min-width: 60%;
+  padding: 20px;
+  box-shadow: 4px 4px 6px rgb(128, 128, 128, 50%);
 }
