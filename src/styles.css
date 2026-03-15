@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", "Open sans", system-ui;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 3fr 5fr 3fr;
+  height: 100vh;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header {
+  position: relative;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+main {
+  background: #ffffff;
+}
+footer {
+  background: #f0f0f0;
+}
+
+.diagonal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(7, 121, 150);
+  transform: skewY(-4deg);
+  transform-origin: left top;
+}
+
+.content {
+  max-width: 1200px;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 30%;
+  object-fit: cover;
+}
