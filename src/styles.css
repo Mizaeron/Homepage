@@ -13,9 +13,7 @@ body {
   grid-template-rows: 3fr 5fr 3fr;
 }
 
-header,
-main,
-footer {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,9 +24,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-main {
-  background: #ffffff;
-}
+
 footer {
   background: #f0f0f0;
 }
@@ -102,4 +98,53 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+main {
+  height: 80vh;
+  margin: 0 4rem;
+  padding: 4rem;
+}
+.projects {
+  height: 100%;
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  justify-content: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.box {
+  background: #fff;
+  min-height: 120px;
+  box-shadow: 4px 6px 6px rgb(128, 128, 128, 50%);
+
+  /* overflow: auto; */
+}
+.project-image {
+  height: 60%;
+  width: 100%;
+  background-color: red;
+}
+
+.box p {
+  font-size: 1rem;
+}
+
+main h2 {
+  display: flex;
+  font-size: 2rem;
+  margin: 0 15px;
+}
+
+.project-description {
+  padding: 14px;
+}
+.project-description a {
+  display: flex;
+  font-size: 30px;
+  margin-left: auto;
+  align-self: center;
 }
