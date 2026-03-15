@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,7 +24,6 @@ footer {
 
 header {
   position: relative;
-  background-color: #f0f0f0;
   overflow: hidden;
 }
 main {
@@ -60,6 +60,7 @@ p {
   font-size: 1.8rem;
 }
 .profile {
+  position: relative;
   min-width: 40%;
 }
 .profile-pic {
@@ -68,6 +69,21 @@ p {
   object-fit: cover;
 }
 
+.profile .name {
+  font-family: Impact;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 90%;
+  transform: translateX(-50%);
+  color: rgb(228, 220, 220);
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 .profile-description {
   background-color: white;
   margin: auto;
