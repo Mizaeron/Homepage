@@ -158,3 +158,47 @@ main h2 {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
 }
+
+footer {
+  background-color: #0891b2;
+  color: white;
+  font-family: "Open sans";
+  height: 60vh;
+  display: flex;
+  padding: 20px;
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.otherme {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-me {
+  height: 85%;
+  width: 80%;
+  object-fit: cover;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+}
+svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: white;
+  margin-right: 1rem;
+}
+
+div > span {
+  font-size: 2rem;
+}
