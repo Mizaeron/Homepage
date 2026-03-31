@@ -22,11 +22,18 @@ header {
 
 header {
   position: relative;
-  overflow: hidden;
 }
 
 footer {
   background: #f0f0f0;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .diagonal {
@@ -43,58 +50,64 @@ footer {
 .header-content {
   height: 60vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 1200px;
   z-index: 1;
   padding: 20px;
 }
 
-h2 {
-  font-size: 3rem;
+.profile-description {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 80%;
+  background-color: white;
+  box-shadow: 4px 4px 6px rgb(128, 128, 128, 50%);
 }
 
-p {
-  font-size: 1.8rem;
-}
-.profile {
-  position: relative;
-  min-width: 40%;
+.profile-description h2 {
+  max-width: 250px;
 }
 .profile-pic {
-  height: 100%;
-  width: 100%;
+  width: 40%;
+  height: 120%;
   object-fit: cover;
 }
 
-.profile .name {
-  font-family: Impact;
-  position: absolute;
-  left: 50%;
-  bottom: 8px;
-  width: 90%;
-  transform: translateX(-50%);
-  color: rgb(228, 220, 220);
-  padding: 0.25rem 0.5rem;
-  text-align: center;
-  font-size: 3.5rem;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
-  letter-spacing: 2px;
-  font-weight: bold;
+.description {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 10px;
+  margin: 10px;
+  align-content: center;
 }
-.profile-description {
-  background-color: white;
-  margin: auto;
-  min-width: 60%;
-  padding: 20px;
-  box-shadow: 4px 4px 6px rgb(128, 128, 128, 50%);
+
+.description p {
+  font-size: 1.5rem;
 }
 
 .profile-icons {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  font-size: 40px;
+  font-size: 30px;
+  margin-left: auto;
 }
 
+.name {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 3%;
+  transform: translateY(80px);
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  font-family: Impact;
+}
 a {
   text-decoration: none;
   color: black;
@@ -153,12 +166,6 @@ main h2 {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
-  .projects {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-  }
-}
-
 footer {
   background-color: #0891b2;
   color: white;
@@ -201,4 +208,15 @@ svg {
 
 div > span {
   font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .profile-pic {
+    height: 70%;
+    /* margin-left: 100px; */
+  }
+  .profile-description {
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
